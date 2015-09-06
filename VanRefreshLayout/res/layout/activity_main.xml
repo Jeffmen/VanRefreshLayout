@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vanrefreshlayout.demo.MainActivity" >
+
+		<com.example.vanrefreshlayout.view.PullToRefreshLayout
+		    android:id="@+id/refresh_view"  
+		    android:layout_width="match_parent"  
+		    android:layout_height="match_parent" >  
+		  
+		    <include layout="@layout/refresh_head" />
+		    <ListView  
+		        android:id="@+id/listView"  
+		        android:layout_width="fill_parent"  
+		        android:layout_height="wrap_content"
+	            android:fadeScrollbars="true"
+				android:scrollbars="none"
+		        android:padding="16dp" />
+		
+		</com.example.vanrefreshlayout.view.PullToRefreshLayout>
+
+</RelativeLayout>

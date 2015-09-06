@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="speed" format="dimension" />
+    <attr name="src" format="reference" />
+    <declare-styleable name="ParallaxView">
+	    <attr name="speed"/>
+	    <attr name="src"/>
+    </declare-styleable>
+    <declare-styleable name="FlipView">
+	    <attr name="speed"/>
+	    <attr name="src"/>
+    </declare-styleable>
+</resources>

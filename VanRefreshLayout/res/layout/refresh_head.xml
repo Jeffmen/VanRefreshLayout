@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:image_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="75dp">
+
+    <com.example.vanrefreshlayout.view.ScrollingImageView
+        android:id="@+id/scrolling_bg1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="18dp"
+        image_view:speed="1dp"
+        image_view:src="@drawable/scrolling_background" />
+
+    <com.example.vanrefreshlayout.view.ScrollingImageView
+        android:id="@+id/scrolling_bg2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="18dp"
+        image_view:speed="1.9dp"
+        image_view:src="@drawable/scrolling_foreground" />
+
+    <com.example.vanrefreshlayout.view.FlipImageView
+        android:id="@+id/van"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        image_view:speed="3dp"
+        image_view:src="@drawable/van" />
+</FrameLayout>
