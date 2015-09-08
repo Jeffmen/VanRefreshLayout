@@ -41,7 +41,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         listView = (ListView) findViewById(R.id.listView);
-        listView.setAdapter(new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_expandable_list_item_1,getData()));
+        listView.setAdapter(new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1,getData()));
         refreshLayout = (PullToRefreshLayout) findViewById(R.id.refresh_view);
         refreshLayout.setOnRefreshListener(swipeRefreshListener);
     }
@@ -57,7 +57,7 @@ public class MainActivity extends Activity {
         
        List<String> data = new ArrayList<String>();
        for(int i=0; i < count; i++){
-           data.add("测试数据 "+i+1);
+           data.add("测试数据 "+(i+1));
        }
        return data;
    }
